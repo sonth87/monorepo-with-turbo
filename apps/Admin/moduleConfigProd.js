@@ -15,7 +15,7 @@ const appModule = {
         return [...Array(30)].map(() => Math.random().toString(36)[2]).join('');
     },
     get federationConfig() {
-        return `${this.name}@${domain}/transaction-static/${this.fileName}?${this.randomString}`;
+        return `${this.name}@${domain}/app-static/${this.fileName}?${this.randomString}`;
     },
 };
 
@@ -26,7 +26,7 @@ const app1Module = {
         return [...Array(30)].map(() => Math.random().toString(36)[2]).join('');
     },
     get federationConfig() {
-        return `${this.name}@${domain}/agent-static/${this.fileName}?${this.randomString}`;
+        return `${this.name}@${domain}/app1-static/${this.fileName}?${this.randomString}`;
     },
 };
 
