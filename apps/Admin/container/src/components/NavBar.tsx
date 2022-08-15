@@ -10,7 +10,7 @@ const NavBar: FC = () => {
   const { pathname } = useLocation();
   const history = useHistory();
   return (
-    <div className={pathname.startsWith('/app') ? 'isBigNav' : ''}>
+    <div>
       <div className="logo" onClick={() => history.push('/')}>
         VBI
       </div>
