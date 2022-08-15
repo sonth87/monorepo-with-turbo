@@ -3,7 +3,7 @@ const { ModuleFederationPlugin } = require('webpack').container;
 const commonConfig = require('./webpack.common');
 const packageJson = require('./package.json');
 const ExternalTemplateRemotesPlugin = require('./ExternalTemplateRemotesPlugin');
-const { containerModule, appModule, app1Module } = require('../../../moduleConfigProd');
+const { containerModule, appModule, app1Module } = require('../moduleConfigProd');
 
 const prodConfig = {
   mode: 'production',
