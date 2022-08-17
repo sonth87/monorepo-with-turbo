@@ -5,8 +5,8 @@ const packageJson = require("./package.json");
 const ExternalTemplateRemotesPlugin = require("./ExternalTemplateRemotesPlugin");
 const {
   containerModule,
-  appModule,
-  app1Module,
+  cmsModule,
+  adminSysModule,
 } = require("../moduleConfigProd");
 
 const prodConfig = {
@@ -19,8 +19,8 @@ const prodConfig = {
     new ModuleFederationPlugin({
       name: containerModule.name,
       remotes: {
-        app: appModule.federationConfig,
-        app1: app1Module.federationConfig,
+        cms: cmsModule.federationConfig,
+        adminSys: adminSysModule.federationConfig,
       },
       shared: [packageJson.dependencies, packageJson.devDependencies],
     }),

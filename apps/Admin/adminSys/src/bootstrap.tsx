@@ -11,7 +11,7 @@ const mount = (el: any) => {
 // If we are in development and in isolation,
 // call mount immediately
 if (process.env.NODE_ENV === 'development') {
-  const devRoot = document.querySelector('#app1-root');
+  const devRoot = document.querySelector('#adminSys-root');
 
   if (devRoot) {
     mount(devRoot);

@@ -8,8 +8,8 @@
   - apps
     - Web: Next.js
     - Admin
-      - App1: create react app
-      - App2: create react app
+      - cms: create react app
+      - adminSystem: create react app
   - packages
     - ui: react lib
 
