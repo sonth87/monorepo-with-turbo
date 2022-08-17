@@ -11,10 +11,10 @@ const prodConfig = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'app',
+      name: 'adminSys',
       filename: 'remoteEntry.js',
       exposes: {
-        './App': './src/bootstrap',
+        './adminSysApp': './src/bootstrap',
       },
       shared: packageJson.dependencies,
     }),

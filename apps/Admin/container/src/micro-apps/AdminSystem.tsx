@@ -1,8 +1,8 @@
 // @ts-ignore
-import { mount } from "app1/App1";
+import { mount } from "adminSys/adminSysApp";
 import React, { useRef } from "react";
 
-function App1() {
+function AdminSystem() {
   const ref = useRef(null);
 
   React.useEffect(() => {
@@ -16,4 +16,4 @@ function App1() {
   );
 }
 
-export default App1;
+export default AdminSystem;

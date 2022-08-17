@@ -13,7 +13,7 @@ function App() {
 
       <Button
         label="My Button"
-        className="bg-blue-300 rounded px-4 py-2 mt-4 text-white"
+        className="bg-blue-300 rounded px-4 py-2 mt-4 text-white w-[490px]"
       />
       <Router basename='/app'>
         <Routes />

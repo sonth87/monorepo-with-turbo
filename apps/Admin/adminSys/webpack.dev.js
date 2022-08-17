@@ -15,10 +15,10 @@ const devConfig = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'app1',
+      name: 'adminSys',
       filename: 'remoteEntry.js',
       exposes: {
-        './App1': './src/bootstrap',
+        './adminSysApp': './src/bootstrap',
       },
       shared: packageJson.dependencies,
     }),

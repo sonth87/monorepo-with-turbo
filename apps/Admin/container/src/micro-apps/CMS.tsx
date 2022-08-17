@@ -1,8 +1,8 @@
 // @ts-ignore
-import { mount } from "app/App";
+import { mount } from "cms/cmsApp";
 import React, { useRef } from "react";
 
-function App() {
+function CMS() {
   const ref = useRef(null);
 
   React.useEffect(() => {
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default CMS;

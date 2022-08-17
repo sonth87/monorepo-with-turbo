@@ -15,10 +15,10 @@ const devConfig = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "app",
+      name: "cms",
       filename: "remoteEntry.js",
       exposes: {
-        "./App": "./src/bootstrap",
+        "./cmsApp": "./src/bootstrap",
       },
       shared: packageJson.dependencies,
     }),

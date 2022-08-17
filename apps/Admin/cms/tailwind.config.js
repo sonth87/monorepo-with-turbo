@@ -7,4 +7,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  // corePlugins: {
+  //   preflight: false // <== disable this! to resolve conflict between tailwind & antd
+  // },
 }

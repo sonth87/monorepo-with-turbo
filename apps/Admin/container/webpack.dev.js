@@ -1,13 +1,17 @@
-const path = require('path');
-const ExternalTemplateRemotesPlugin = require('./ExternalTemplateRemotesPlugin');
-const { merge } = require('webpack-merge');
-const { ModuleFederationPlugin } = require('webpack').container;
-const commonConfig = require('./webpack.common');
-const packageJson = require('./package.json');
-const { containerModule, appModule, app1Module} = require('../moduleConfigDev');
+const path = require("path");
+const ExternalTemplateRemotesPlugin = require("./ExternalTemplateRemotesPlugin");
+const { merge } = require("webpack-merge");
+const { ModuleFederationPlugin } = require("webpack").container;
+const commonConfig = require("./webpack.common");
+const packageJson = require("./package.json");
+const {
+  containerModule,
+  appModule,
+  app1Module,
+} = require("../moduleConfigDev");
 
 const devConfig = {
-  mode: 'development',
+  mode: "development",
   output: {
     publicPath: containerModule.url,
   },
@@ -22,7 +26,7 @@ const devConfig = {
         app: appModule.federationConfig,
         app1: app1Module.federationConfig,
       },
-      shared: packageJson.dependencies,
+      shared: [packageJson.dependencies, packageJson.devDependencies],
     }),
     new ExternalTemplateRemotesPlugin(),
   ],

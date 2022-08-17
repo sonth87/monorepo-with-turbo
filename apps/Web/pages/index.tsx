@@ -8,7 +8,7 @@ export default function Web() {
       <h1 className="text-2xl">Web</h1>
       <Button
         label="Button on Web"
-        className="bg-purple-500 px-8 py-3 text-white"
+        className="bg-purple-500 px-8 py-3 text-white w-[500px]"
       />
     </div>
   );
